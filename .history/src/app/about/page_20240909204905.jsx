@@ -1,7 +1,9 @@
+import React from 'react'
+
 export default function page() {
   return (
-    <div className='text-slate-600'>
-      Home   
+    <div>
+      About
     </div>
   )
 }
