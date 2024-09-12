@@ -44,13 +44,6 @@ export default async function page({ params }) {
                   : `${listing.attributeValues.bed.value} bed`
                 } 
               </li>
-              <li className='flex items-center gap-1 whitespace-nowrap'>
-                <FaBed className='text-lg'/>
-                {listing.attributeValues.bath.value > 1
-                  ? `${listing.attributeValues.bath.value} baths `
-                  : `${listing.attributeValues.bath.value} bath`
-                } 
-              </li>
               <li></li>
             </ul>
           </div>

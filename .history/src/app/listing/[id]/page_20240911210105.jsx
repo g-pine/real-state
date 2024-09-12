@@ -1,5 +1,6 @@
 import { defineOneEntry } from "oneentry";
-import { FaMapMarkerAlt, FaBed, FaBath } from 'react-icons/fa'
+import { FaMapMarkerAlt, Fabed } from 'react-icons/fa'
+import { FaBath } from 'react-icons/fa'
 
 const { Products } = defineOneEntry('https://sahandestate2.oneentry.cloud', {
   token: process.env.NEXT_PUBLIC_ONEENTRY_TOKEN,
@@ -38,18 +39,7 @@ export default async function page({ params }) {
             </p>
             <ul className='text-green-900 font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6'>
               <li className='flex items-center gap-1 whitespace-nowrap'>
-                <FaBed className='text-lg'/>
-                {listing.attributeValues.bed.value > 1
-                  ? `${listing.attributeValues.bed.value} beds `
-                  : `${listing.attributeValues.bed.value} bed`
-                } 
-              </li>
-              <li className='flex items-center gap-1 whitespace-nowrap'>
-                <FaBed className='text-lg'/>
-                {listing.attributeValues.bath.value > 1
-                  ? `${listing.attributeValues.bath.value} baths `
-                  : `${listing.attributeValues.bath.value} bath`
-                } 
+                <Fabed className='text-lg'/>
               </li>
               <li></li>
             </ul>

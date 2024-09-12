@@ -8,6 +8,7 @@ const { Menus } = defineOneEntry('https://sahandestate2.oneentry.cloud', {
 });
 export default async function Header() {
     const menus = await Menus.getMenusByMarker('main');
+    console.log(menus)
     return (
     <header className='bg-slate-200 shadow-md'>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
