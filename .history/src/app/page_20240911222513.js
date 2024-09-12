@@ -2,7 +2,7 @@ import ListingItem from '@/components/ListingItem';
 import Link from 'next/link';
 import { defineOneEntry } from 'oneentry';
 
-const { Products } = defineOneEntry('https://sahandestate2.oneentry.cloud', {
+const { Products } = defineOneEntry('https://sahandestate.oneentry.cloud', {
   token: process.env.NEXT_PUBLIC_ONEENTRY_TOKEN,
 });
 
