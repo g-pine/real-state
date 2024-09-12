@@ -18,7 +18,7 @@ export default async function Listings() {
         {allListings && allListings.length > 0 && (
           <div className='flex flex-wrap gap-4'>
             {allListings.map((listing) => (
-              <ListingItem listing={listing} key={listing.id}/>
+              <ListingItem/>
             ))}
           </div>
         )}

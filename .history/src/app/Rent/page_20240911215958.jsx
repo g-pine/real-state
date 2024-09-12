@@ -5,9 +5,9 @@ const { Products } = defineOneEntry('https://sahandestate2.oneentry.cloud', {
   token: process.env.NEXT_PUBLIC_ONEENTRY_TOKEN,
 });
 
-export default async function Listings() {
+export default async function Rent() {
   
-  const allListings = await Products.getProductsByPageUrl('listings');
+  const rentListings = await Products.getProductsByPageUrl('listings');
 
   return (
     <div>
@@ -15,9 +15,9 @@ export default async function Listings() {
         Recent Listings
       </h1>
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
-        {allListings && allListings.length > 0 && (
+        {rentListings && rentListings.length > 0 && (
           <div className='flex flex-wrap gap-4'>
-            {allListings.map((listing) => (
+            {rentListings.map((listing) => (
               <ListingItem listing={listing} key={listing.id}/>
             ))}
           </div>
